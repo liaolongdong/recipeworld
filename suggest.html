@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>美食网 - 意见与建议</title>
+    <meta name="keywords" content="美食,美食网,菜谱,菜谱网,美食地图,食谱">
+    <meta name="description" content="美食网 - 做你最喜爱的美食网，菜谱网。找家常菜谱，上美食网。">
+    <link type="text/css" rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="login-bar">
+            <a class="qq-login" href="#">QQ登录</a>
+            <a class="wb-login" href="#">微博登录</a>
+        </div>
+        <div class="logo">
+            <img src="images/new_year_logo.gif" alt="美食网">
+        </div>
+        <ul class="nav">
+            <li><a href="home.html" title="美食网 - 主页">主页</a></li>
+            <li><a href="recipes.html" title="美食网 - 主页">美食菜单</a></li>
+            <li><a href="suggest.html" title="美食网 - 主页">讨论组</a></li>
+        </ul>
+    </div><!-- .header 结束-->
+    <div class="main-content">
+        <h2>发布美食</h2>
+        <form action="success.html" method="post">
+            <table class="suggest">
+                <tr>
+                    <td class="td-label">
+                        <label for="recipe-name">食谱名称</label>
+                    </td>
+                    <td>
+                        <input type="text" id="recipe-name" name="recipe-name">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-label">
+                        <label for="photos">上传成品图</label>
+                    </td>
+                    <td>
+                        <input type="file" id="photos">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-label">
+                        <label>美食类型</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" id="type-a" checked value="1"><label for="type-a">原创</label>
+                        <input type="radio" name="type" id="type-b" value="2"><label for="type-b">转载</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-label">
+                        <label>人数</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option>1人</option>
+                            <option selected>2人</option>
+                            <option>3人</option>
+                            <option>多人</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-label">
+                        <label for="ingredients">材料</label>
+                    </td>
+                    <td>
+                        <textarea id="ingredients" ></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-label">
+                        <label for="directions">制作过程</label>
+                    </td>
+                    <td>
+                        <textarea id="directions"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-label"></td>
+                    <td>
+                        <input type="checkbox" id="newsletter" checked>
+                        <label for="newsletter">订阅新闻邮件？</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td-btn">
+                        <input type="submit" value="发布">
+                        <input type="reset" value="重新填写">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div><!-- .main-content 结束-->
+    <div class="footer">
+        <p>&copy;2015 - RecipeWorld - 美食网</p>
+    </div><!-- .footer 结束-->
+</body>
+</html>

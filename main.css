@@ -1,0 +1,302 @@
+/*页面初始化*/
+html, body, h1, h2,h3, p, ol, ul, li, a{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    /*font-size: 100%;
+    font-weight: normal;*/
+    font: inherit;
+}
+
+/*通用样式*/
+body{
+    background: #333333 url(images/bg-body.jpg) top left repeat;
+    font: 14px/24px 微软雅黑, 黑体, Verdana, Arial, sans-serif;
+    color: #333333;
+}
+
+h1{
+    margin: 10px 0 15px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+h2{
+    color: #79B1A3;
+    margin: 10px 0 20px 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+h3{
+    color: #79B1A3;
+    margin: 15px 0;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 3px;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+ul{
+    padding: 0 0 0 50px;
+}
+
+ol{
+    padding: 0 0 0 50px;
+}
+
+a{
+    color: #79B1A3;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+textarea{
+    resize: none;
+}
+
+/*网页布局*/
+.header{
+    padding: 10px;
+    background: #8A200A url(images/bg-header.jpg) top left repeat;
+}
+
+.main-content{
+    width: 670px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    margin: 30px auto 0 auto;
+    background: #eeeeee url(images/bg-main.jpg) top left repeat;
+}
+
+/*登录条*/
+.login-bar{
+    position: fixed;
+    right: 30px;
+    top: 10px;
+    background-color: rgba(138, 32, 10, 0.75);
+    padding: 10px;
+    z-index: 99;
+}
+
+.login-bar a{
+    color: #ffffff;
+    text-decoration: none;
+    background: url(images/login-icon.gif) 0 0 no-repeat;
+    padding-left: 28px;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+}
+
+.login-bar a.qq-login{
+    background-position: 0 0;
+}
+
+.login-bar a.wb-login{
+    background-position: 0 -28px;
+}
+
+.login-bar a:hover{
+    text-decoration: underline;
+}
+
+/*logo*/
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width: 226px;
+    height: 129px;
+}
+
+/*页面导航条*/
+.nav{
+    padding-left: 0;
+    text-align: center;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    height: 56px;
+    line-height: 56px;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 0 26px;
+}
+
+.nav a:hover{
+    background-color: #a0000f;
+}
+
+/*菜单列表*/
+.recipes{
+    list-style-type: none;
+    padding: 0;
+}
+
+.recipes li{
+    border: 1px solid #b56663;
+    padding: 15px;
+    margin: 15px 0;
+    height: 160px;
+}
+
+.recipes h3{
+    border-bottom: 0;
+}
+
+.recipes a{
+    color: #7facaa;
+    text-decoration: none;
+}
+
+.recipes img{
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding: 5px;
+    margin-right: 10px;
+    background-color: #FFFFFF;
+}
+
+.recipes p{
+    margin-left: 170px;
+    height: 91px;
+    overflow: hidden;
+}
+
+.clear{
+    clear: both;
+}
+
+/*美食详细页面*/
+/*图片信息*/
+.photos{
+    padding-left: 0;
+}
+.photos li{
+    display: inline;
+}
+
+/*页脚*/
+.footer{
+    padding: 10px 0 30px 0;
+}
+
+.footer p{
+    color: #aaaaaa;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/*发布美食*/
+.suggest{
+    width: 100%;
+}
+
+.suggest td{
+    padding: 5px;
+}
+
+.suggest .td-label{
+    width: 100px;
+    text-align: right;
+}
+
+.suggest .td-btn{
+    text-align: center;
+}
+
+.suggest input[type=text]{
+    width: 500px;
+    padding: 7px;
+    border: 2px solid #79B1A3;
+}
+
+.suggest textarea{
+    width: 500px;
+    padding: 7px;
+    border: 2px solid #79B1A3;
+}
+
+#ingredients{
+   height: 100px;
+}
+
+#directions{
+    height: 300px;
+}
+
+.suggest input[type=submit], .suggest input[type=reset]{
+    width: 120px;
+    font-size: 20px;
+}
+
+/*
+.suggest .td-btn input{
+
+}*/
+
+/*主页面*/
+.home_imgbox{
+    height: 640px;
+    width: 100%;
+    background: url(images/main.jpg) center center no-repeat;
+    position: relative;
+}
+
+.home_imgbox .info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.home_imgbox .info_wrap{
+    background: url(images/nw_logo.gif) 0 center no-repeat;
+    height: 200px;
+    width: 670px;
+    margin: 0 auto;
+    padding-left: 320px;
+}
+
+.home_imgbox .info_wrap h3{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+    height: 44px;
+    border: 0;
+}
+
+.home_imgbox .info_wrap p{
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 6px;
+}
+
+/*天气预报*/
+.weather{
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
